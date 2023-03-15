@@ -51,14 +51,14 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  width: 900px;
   overflow: hidden;
   margin: 0 auto;
   border-bottom: 2px solid black;
 }
 
 .accordion {
-  max-width: 80%;
+  width: 700px;
   margin: 0 auto;
   background: #ffffff;
   padding: 50px;
@@ -70,16 +70,33 @@ body {
   border-bottom: 2px solid black;
 }
 .accordion__title {
+  width: 100%;
   padding: 20px;
   border-bottom: 2px solid black;
   background: #ffffff;
   position: relative;
-  font-size: 25px;
+  font-size: 20px;
 }
 .accordion__icon {
   position: absolute;
   right: 30px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+.rotate {
+  -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .footer {
