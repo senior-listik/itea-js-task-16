@@ -23,27 +23,41 @@ $hover-color: aqua;
 
 .container {
     width: 900px;
-    overflow: hidden;
+    overflow-y: scroll;
     margin: 0 auto;
     border-bottom: 2px solid black;
+    &::-webkit-scrollbar {
+            width: 0;
+    }
 }
-
+ .title {
+     text-align: center;
+     margin-bottom: 20px;
+     text-transform: capitalize;
+ }
 .accordion {
-    width: 700px;
+    
+    width: 80%;
     margin: 0 auto;
     background: $items-bg;
-    padding: 50px;
+    padding: 30px 30px 50px;
+   
     &_text {
+    margin: 0 auto;
+        width: 90%;
+        height: 130px;
         background: $items-bg;
         text-align: justify;
         padding: 20px;
-        border-bottom: 2px solid black;
+        transition: 0.5s;
     }
 
      &__title {
-        width: 100%;
+    margin: 0 auto;
+        width: 90%;
         padding: 20px;
-        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        // border-bottom: 2px solid black;
         background: $items-bg;
         position: relative;
         font-size: 20px;
@@ -57,7 +71,9 @@ $hover-color: aqua;
     }
 }
 .hide{
-    display: none;
+    height: 0;
+    padding: 0 20px;
+    overflow: hidden;
 }
 .rotate{
     transform: rotate(225deg);
