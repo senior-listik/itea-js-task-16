@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  min-width: 900px;
+  width: 900px;
   overflow-y: scroll;
   margin: 0 auto;
   -webkit-box-flex: 1;
@@ -170,4 +170,7 @@ body {
 .footer__link:hover {
   color: aqua;
   fill: aqua;
+}
+.footer__icon .fa-github {
+  font-size: 2rem;
 }

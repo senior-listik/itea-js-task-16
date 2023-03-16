@@ -38,7 +38,7 @@ $hover-color: aqua;
 }
 
 .container {
-    min-width: 900px;
+    width: 900px;
     overflow-y: scroll;
     margin: 0 auto;
     flex: 1 1 auto;
@@ -87,6 +87,7 @@ $hover-color: aqua;
         right: 30px;
         cursor: pointer;
         transition: 0.5s;
+        
     }
 }
 .hide{
@@ -142,5 +143,9 @@ $hover-color: aqua;
 
     &__name {}
 
-    &__icon {}
+    &__icon {
+        .fa-github {
+                font-size: 2rem;
+            }
+    }
 }
