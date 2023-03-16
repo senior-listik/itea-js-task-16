@@ -21,10 +21,11 @@ a {
 
 body {
   font-family: "Open Sans", serif;
+  font-size: 1rem;
   color: black;
 }
 
-.footer__link, .wrapper {
+.footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,22 +39,25 @@ body {
 
 .wrapper {
   min-height: 100%;
-  max-height: 100vh;
+  height: 100vh;
   background: rgb(204, 92, 0);
-  padding-top: 30px;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
 }
 
 .container {
-  width: 900px;
+  min-width: 900px;
   overflow-y: scroll;
   margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   border-bottom: 2px solid black;
 }
 .container::-webkit-scrollbar {
@@ -62,12 +66,13 @@ body {
 
 .title {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
   text-transform: capitalize;
 }
 
 .accordion {
   width: 80%;
+  min-height: 100%;
   margin: 0 auto;
   background: #ffffff;
   padding: 30px 30px 50px;
@@ -75,13 +80,14 @@ body {
 .accordion_text {
   margin: 0 auto;
   width: 90%;
-  height: 130px;
+  height: 200px;
   background: #ffffff;
   text-align: justify;
   padding: 20px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-size: 1rem;
 }
 .accordion__title {
   margin: 0 auto;
@@ -90,7 +96,8 @@ body {
   border-top: 2px solid black;
   background: #ffffff;
   position: relative;
-  font-size: 20px;
+  font-size: 1.35rem;
+  cursor: pointer;
 }
 .accordion__icon {
   position: absolute;
@@ -116,13 +123,21 @@ body {
   transition: 0.5s;
 }
 
+.border {
+  border-bottom: 2px solid black;
+}
+
 .footer {
   width: 100%;
+  height: 15%;
   padding: 30px 0;
   background: rgb(204, 92, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .footer__container {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
