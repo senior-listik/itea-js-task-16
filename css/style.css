@@ -26,10 +26,6 @@ html, body {
   }
 }
 
-ul, li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -79,6 +75,11 @@ body {
 .container::-webkit-scrollbar {
   width: 0;
 }
+@media (min-width: 1441px) {
+  .container {
+    width: 1100px;
+  }
+}
 @media (max-width: 1025px) {
   .container {
     width: 600px;
@@ -118,7 +119,8 @@ body {
 .accordion_text {
   margin: 0 auto;
   width: 90%;
-  height: 12.5rem;
+  height: 11rem;
+  overflow-y: scroll;
   background: #ffffff;
   text-align: justify;
   padding: 1.25rem;
@@ -126,6 +128,9 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
   font-size: 1rem;
+}
+.accordion_text::-webkit-scrollbar {
+  width: 0;
 }
 .accordion__title {
   margin: 0 auto;
@@ -148,7 +153,7 @@ body {
 
 .hide {
   height: 0;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   overflow: hidden;
 }
 
